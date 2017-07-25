@@ -30,6 +30,7 @@
 
 
     <link rel="stylesheet" href="./WhatsApp_files/style.build.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <script type="text/javascript" src="WhatsApp_files/jquery-1.12.2.min.js"></script>
     <style>
@@ -47,16 +48,27 @@
             margin: 0px;
             background-color: white;
         }
+
+        .grad {
+            background: #ff4b72; /* For browsers that do not support gradients */
+            /*background: -webkit-linear-gradient(left top, #d6009f, #ff3701); !* For Safari 5.1 to 6.0 *!*/
+            /*background: -o-linear-gradient(bottom right, #ff03b2, #ff3701); !* For Opera 11.1 to 12.0 *!*/
+            /*background: -moz-linear-gradient(bottom right, #ff03b2, #ff3701); !* For Firefox 3.6 to 15 *!*/
+            background: linear-gradient(to bottom right, #ff03b2, #ff9703); /* Standard syntax */
+            font-family: 'Nunito', sans-serif;
+        }
+
+
     </style>
 </head>
-<body style="height: 100vh;width: 100vw;">
+<body style="height: 100vh;width: 100vw;" class="grad">
 
-<div class="section section--hero" style="height: 100vh; background-color: white; color: darkslategrey;">
+<div class="section section--hero" style="height: 100vh;  color: darkslategrey;">
     <div class="block block--hero">
         <div class="block__inner">
-            <h1 class="block__title" style="color: #ff3f6a">
-                The Dancho's <br>SHOUTcast Radio App</h1>
-            <div class="block__body">
+            <h1 class="block__title" style="color: #FFFFFF">
+                The Dancho's <br><b>SHOUTcast</b> Radio App</h1>
+            <div class="block__body" style="color: white;">
                 With <b>Jukebox Shoutcast</b>, you'll get fast, simple and reliable radio stations in <span
                     class="nowrap">100s of languages,</span> from all over the world.
             </div>
@@ -74,15 +86,15 @@
             <div class="block__action actions">
                 <ul>
                     <li>
-                        <a style="color: #ff3f6a;"
+                        <a style="color: #FFFFFF;"
                            href="https://play.google.com/store/apps/details?id=com.zilideus.jukebox">
-                            <img src="WhatsApp_files/icon-android.svg" alt="" style="color: #ff3f6a;">
+                            <img src="WhatsApp_files/icon-android.svg" alt="" style="color: #FFFFFF;">
                             Android </a>
                     </li>
                     <li>
-                        <a style="color: #ff3f6a;"
+                        <a style="color: #FFFFFF;"
                            href="https://itunes.apple.com/us/app/jukebox-shoutcast/id1233822279?mt=8">
-                            <img src="WhatsApp_files/icon-iphone.svg" alt="">
+                            <img src="WhatsApp_files/icon-iphone.svg" alt="" style="color: white">
                             iPhone </a>
                     </li>
                     <li>
