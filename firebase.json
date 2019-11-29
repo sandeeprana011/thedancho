@@ -1,16 +1,51 @@
 {
-  "hosting": {
-    "public": "/",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
+  "hosting": [
+    {
+      "target": "root",
+      "public": "",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "appAssociation": "AUTO",
+      "target": "write",
+      "public": "public/write",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "dynamicLinks": true
+        }
+      ]
+    },
+    {
+      "appAssociation": "NONE",
+      "target": "fmradio",
+      "public": "public/fmradio",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/radio/**",
+          "dynamicLinks": true
+        }
+      ]
+    }
+  ]
 }

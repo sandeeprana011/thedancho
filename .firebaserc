@@ -1,5 +1,20 @@
 {
   "projects": {
     "default": "shopping-kart-20b6b"
+  },
+  "targets": {
+    "shopping-kart-20b6b": {
+      "hosting": {
+        "write": [
+          "stationcache"
+        ],
+        "root": [
+          "shopping-kart-20b6b"
+        ],
+        "fmradio": [
+          "fm-local-radio"
+        ]
+      }
+    }
   }
 }
