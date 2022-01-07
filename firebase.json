@@ -2,7 +2,7 @@
   "hosting": [
     {
       "target": "root",
-      "public": "",
+      "public": "./public",
       "ignore": [
         "firebase.json",
         "**/.*",
@@ -11,39 +11,24 @@
       "rewrites": [
         {
           "source": "**",
-          "destination": "/index.html"
+          "public": "./public/",
+          "destination": "./public/index.html"
         }
       ]
     },
     {
-      "appAssociation": "AUTO",
-      "target": "write",
-      "public": "public/write",
+      "site": "whileranaq",
+      "public": "./public/while",
       "ignore": [
         "firebase.json",
         "**/.*",
-        "**/node_modules/**"
+        "**/node_modules/**",
+        "fm","fmradio","write"
       ],
       "rewrites": [
         {
           "source": "**",
-          "dynamicLinks": true
-        }
-      ]
-    },
-    {
-      "appAssociation": "NONE",
-      "target": "fmradio",
-      "public": "public/fmradio",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "rewrites": [
-        {
-          "source": "/radio/**",
-          "dynamicLinks": true
+          "destination": "./public/"
         }
       ]
     }

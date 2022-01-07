@@ -13,6 +13,15 @@
         ],
         "fmradio": [
           "fm-local-radio"
+        ],
+        "while": [
+          "while"
+        ],
+        "whileranaq": [
+          "public/while"
+        ],
+        "fmradiothedancho": [
+          "./public/fmradio"
         ]
       }
     }
