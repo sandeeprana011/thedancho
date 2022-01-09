@@ -17,5 +17,6 @@
     <orderEntry type="library" name="cplayer" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="bootstrap-theme" level="application" />
+    <orderEntry type="library" name="recaptcha__en" level="application" />
   </component>
 </module>
