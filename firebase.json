@@ -8,11 +8,20 @@
         "**/.*",
         "**/node_modules/**"
       ],
+      "appAssociation": "AUTO",
       "rewrites": [
+        { "source": "/link/**", "dynamicLinks": true },
         {
           "source": "**",
           "public": "./public",
           "destination": "./public/index.html"
+        },
+        {
+          "ignore": [
+            "*"
+          ],
+          "source": "/**",
+          "dynamicLinks": true
         }
       ]
     },
