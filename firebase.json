@@ -10,7 +10,18 @@
       ],
       "appAssociation": "AUTO",
       "rewrites": [
-        { "source": "/link/**", "dynamicLinks": true },
+        {
+          "source": "/link/**",
+          "dynamicLinks": true
+        },
+        {
+          "source": "/link/id/**",
+          "dynamicLinks": true
+        },
+        {
+          "source": "/link/station/**",
+          "dynamicLinks": true
+        },
         {
           "source": "**",
           "public": "./public",
@@ -32,7 +43,9 @@
         "firebase.json",
         "**/.*",
         "**/node_modules/**",
-        "fm","fmradio","write"
+        "fm",
+        "fmradio",
+        "write"
       ],
       "rewrites": [
         {
